@@ -2,10 +2,31 @@
   {
     "action": {
       "type": "css-display-none",
-      "selector": "div.a_cn, .adsbygoogle, div[id^=\"image_ad\"], div[class*=\"imgAd\"]"
+      "selector": "div.pop-ad-cover, div#ad_fullscreen, .adsbygoogle, div[id^=\"ad_\"], div[id^=\"image_ad\"], div[id^=\"my-ads\"], div[class^=\"ad-\"], div[class*=\"imgAd\"]"
     },
     "trigger": {
-      "url-filter": "ck101.com/",
+      "url-filter": ".*",
+      "resource-type": ["document"]
+    }
+  },
+  {
+    "action": {
+      "type": "css-display-none",
+      "selector": "div#rightCol"
+    },
+    "trigger": {
+      "url-filter": "facebook.com",
+      "resource-type": ["document"],
+      "if-domain": ["www.facebook.com"]
+    }
+  },
+  {
+    "action": {
+      "type": "css-display-none",
+      "selector": "div.a_cn, div.mobileAD"
+    },
+    "trigger": {
+      "url-filter": "ck101.com",
       "resource-type": ["document"],
       "if-domain": ["ck101.com"]
     }
