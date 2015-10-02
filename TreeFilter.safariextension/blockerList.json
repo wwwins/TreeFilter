@@ -2,10 +2,10 @@
   {
     "action": {
       "type": "css-display-none",
-      "selector": "div.pop-ad-cover, div#ad_fullscreen, .adsbygoogle, div[id^=\"ad_\"], div[id^=\"image_ad\"], div[id^=\"my-ads\"], div[class^=\"ad-\"], div[class*=\"imgAd\"]"
+      "selector": "div.pop-ad-cover, div#ad_fullscreen, .adsbygoogle, div[id^=\"ad-\"], div[id^=\"ad_\"], div[id^=\"image_ad\"], div[id^=\"my-ads\"], div[class^=\"ad-\"], div[class^=\"ad_\"], div[class*=\"imgAd\"]"
     },
     "trigger": {
-      "url-filter": ".*",
+      "url-filter": "http",
       "resource-type": ["document"]
     }
   },
@@ -29,6 +29,44 @@
       "url-filter": "ck101.com",
       "resource-type": ["document"],
       "if-domain": ["ck101.com"]
+    }
+  },
+  {
+    "action": {
+      "type": "css-display-none",
+      "selector": "div[id^=\"hp-ad-\"], div.nexpando"
+    },
+    "trigger": {
+      "url-filter": "yahoo.com",
+      "resource-type": ["document"],
+      "if-domain": ["tw.bid.yahoo.com"]
+    }
+  },
+  {
+    "action": {
+      "type": "css-display-none",
+      "selector": "div.yom-ad"
+    },
+    "trigger": {
+      "url-filter": "yahoo.com",
+      "resource-type": ["document"],
+      "if-domain": ["tw.news.yahoo.com"]
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "ltn.com.tw/assets/js/article_desktop.js"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "ltn.com.tw/assets/js/article.js"
+    },
+    "action": {
+      "type": "block"
     }
   },
   {
