@@ -34,7 +34,7 @@
   {
     "action": {
       "type": "css-display-none",
-      "selector": "div[class=\"ColWrap\"], div[class=\"ColWrap Sticky\"], div#my-adsFPL"
+      "selector": "div[class=\"ColWrap\"], div[class=\"ColWrap Sticky\"], div#my-adsFPL, div#my-adsFPT, div#my-adsFPAD"
     },
     "trigger": {
       "url-filter": "yahoo.com",
@@ -107,6 +107,22 @@
   {
     "trigger": {
       "url-filter": "/common/ad_"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "bats.video.yahoo.com/"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "qos.video.yim.com/"
     },
     "action": {
       "type": "block"
