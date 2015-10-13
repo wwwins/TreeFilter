@@ -23,7 +23,7 @@
   {
     "action": {
       "type": "css-display-none",
-      "selector": "div.a_cn, div.mobileAD, div.videoADImg"
+      "selector": "div.a_cn, div.mobileAD, div.videoADImg, div.cfads_cross, div.float_ad_allage_box, div[class^=\"adfix\"]"
     },
     "trigger": {
       "url-filter": "ck101.com",
